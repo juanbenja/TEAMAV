@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("pictures/foto alan.jpg");
+  /* Substitua pelo caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  background-color: #ff0381d7;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.555);
+  transform: scale(0.8);
+  transition: transform 0.5s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1);
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.347);
+}
+
+h1 {
+  margin: 5px 0;
+  font-size: 24px;
+  animation: fadeIn 2s ease;
+}
+
+.title {
+  margin: 5px 0 20px 0;
+  font-size: 18px;
+  color: #7effd6;
+  animation: fadeIn 2.5s ease;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+.buttons a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #7effd6cf;
+  color: #ff0381c5;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons a:hover {
+  background-color: #7effd6;
+  transform: scale(1.05);
+}
+
+.buttons a:active {
+  transform: scale(0.95);
+  background-color: #4c4c4cb9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
